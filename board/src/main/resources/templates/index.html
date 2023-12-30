@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title> <!--시작화면 -->
+</head>
+<body>
+<!--글작성 버튼 만들기-->
+<button onclick="saveReq()">글작성 </button>
+</body>
+<script>
+<!--글 작성 버튼 클릭시 saveReq()메소드 호출 -> "/board/save" 주소 호출하기 -->
+      const saveReq = () => {
+        location.href = "/board/save";
+      }
+</script>
+    </html>
