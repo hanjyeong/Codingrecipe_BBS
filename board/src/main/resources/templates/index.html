@@ -5,13 +5,17 @@
     <title>index</title> <!--시작화면 -->
 </head>
 <body>
-<!--글작성 버튼 만들기-->
+
 <button onclick="saveReq()">글작성 </button>
+<button onclick="listReq()">글목록 </button>
 </body>
 <script>
 <!--글 작성 버튼 클릭시 saveReq()메소드 호출 -> "/board/save" 주소 호출하기 -->
       const saveReq = () => {
         location.href = "/board/save";
+      }
+     const listReq = () => {
+        location.href = "/board/";
       }
 </script>
     </html>
